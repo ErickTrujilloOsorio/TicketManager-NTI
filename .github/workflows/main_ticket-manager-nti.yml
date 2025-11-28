@@ -55,6 +55,5 @@ jobs:
         id: deploy-to-webapp
         with:
           app-name: 'ticket-manager-nti'
-          slot-name: 'Production'
-          package: .
+          package: ./public
           publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_42FEA7680ADD41EDA8B24DCE717165D6 }}
