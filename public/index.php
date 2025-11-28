@@ -50,6 +50,6 @@ require $pathsPath;   // ← ESTA LÍNEA ES LA QUE TE FALTABA
 $paths = new Paths();
 
 // LOAD THE FRAMEWORK BOOTSTRAP FILE
-require $paths->systemDirectory . '/Boot.php';
+require $paths->systemDirectory . 'Boot.php';
 
 exit(Boot::bootWeb($paths));
