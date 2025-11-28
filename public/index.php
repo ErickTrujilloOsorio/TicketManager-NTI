@@ -45,9 +45,9 @@ if (getcwd() . DIRECTORY_SEPARATOR !== FCPATH) {
 
 // Correct path to Paths.php for Azure (CI in root)
 $pathsPath = realpath(__DIR__ . '/app/Config/Paths.php');
-require $pathsPath;   // ← ESTA LÍNEA ES LA QUE TE FALTABA
+require $pathsPath;
 
-$paths = new Paths();
+$pathsPath = new Paths();
 
 // LOAD THE FRAMEWORK BOOTSTRAP FILE
 require $paths->systemDirectory . 'Boot.php';
